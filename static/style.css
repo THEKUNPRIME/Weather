@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(180deg, #0A192F, #1C1C1C);
+    color: #F0F0F0;
+    font-size: 18px;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+.kun {
+  background: #111;
+  padding: 30px 15px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  border-bottom: 3px solid #00BFFF;
+  color: white;
+}
+.main{
+    text-align: center;
+    margin-top: 7%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.main form{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.main form p{
+    margin: 0;
+}
+.kun2{
+    font-size: 50px;
+    color: white;
+}
+@media (max-width: 800px) {
+.main{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+}
+.kin{
+    color: white;
+}
+.yo{
+    color: white;
+}
