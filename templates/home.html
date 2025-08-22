@@ -13,27 +13,20 @@
     </header>
     <div class="main">
         <p class="kun2">VOTRE VILLE</p>
-        <form action="/" method="post">
+        <form id="form" action="/" method="post">
             <div class="input-group mb-3">
-              <input type="text" name="nm" class="form-control" placeholder="Recipient’s username" aria-label="Recipient’s username" aria-describedby="button-addon2">
+              <input id="city" type="text" name="nm" class="form-control" placeholder="Recipient’s username" aria-label="Recipient’s username" aria-describedby="button-addon2">
               <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Cherchez</button>
             </div>
         </form>
         <h3 class="yo">{{message}}</h3>
-        {% if icon %}
-        <div id="icon"><img id="wicon" src="http://openweathermap.org/img/w/{{ icon }}.png" alt="Weather icon"></div>
-        {% endif %}
-        <ul class="list-group list-group-flush">
-            {% if temperature %}
-            <li class="list-group-item">Temperature : {{temperature}}</li>
-            <li class="list-group-item">Description du ciel : {{description}}</li>
-            <li class="list-group-item">Humidité : {{humidite}}</li>
-            <li class="list-group-item">Nom de la ville : {{nom}}</li>
-            <li class="list-group-item">lever_du_soleil : {{lever_du_soleil}}</li>
-            <li class="list-group-item">coucher_de_soleil : {{coucher_de_soleil}}</li>
-            {% endif %}
+        <div id="image">
+
+        </div>
+        <ul id="maListe" class="list-group list-group-flush">
         </ul>
     </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
 </html>

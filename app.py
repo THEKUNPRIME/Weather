@@ -8,19 +8,7 @@ api = Api(app)
 
 @app.route("/", methods=["POST", "GET"])
 def home():
-    try:
-        if request.method == "POST":
-            user = request.form.get("nm")
-            if user == "":
-                return render_template("home.html")
-            data = weather_utils.weather(str(user))
-            return render_template("home.html", **data)
-        else:
-            return render_template("home.html")
-    except TypeError:
-        return render_template("home.html", message="cette ville n'existe pas ou elle est mal ortographié")
-    except KeyError:
-        print("cette ville n'existe pas ou elle est mal ortographié")
+    return render_template('home.html')
 
 class Temperature(Resource):
     def get(self):
